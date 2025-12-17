@@ -71,7 +71,7 @@
             async function view_transaction(){
                 const result = await contract.methods.deposit_view().call();
                 console.log(result[0],result[1]);
-                document.getElementById('view_depositor').innerText = "Payer: " + result[0];
+                document.getElementById('view_depositor').innerText = "Depositor: " + result[0];
                 document.getElementById('view_amount').innerText = "Amount: " + result[1];
             }
         </script>
